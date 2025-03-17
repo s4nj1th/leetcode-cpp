@@ -10,3 +10,21 @@ public:
     return true;
   }
 };
+
+// another way (using hash table)
+class Solution {
+public:
+  bool divideArray(vector<int> &nums) {
+    unordered_map<int, int> ht;
+    for (int i : nums) {
+      ht[i]++;
+    }
+
+    for (auto &[x, y] : ht) {
+      if (y % 2 != 0)
+        return false;
+    }
+
+    return true;
+  }
+};
