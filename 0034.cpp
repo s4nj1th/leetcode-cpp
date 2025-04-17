@@ -1,11 +1,8 @@
 class Solution {
 public:
   vector<int> searchRange(vector<int> &nums, int target) {
-    vector<int> result = {-1, -1};
     int l = binSer(nums, target, true);
     int r = binSer(nums, target, false);
-    result[0] = l;
-    result[1] = r;
     return {l, r};
   }
 
