@@ -1,34 +1,29 @@
 class Solution {
 public:
-  int longestPalindrome(vector<string> &words, int count = 0) {
-    unordered_map<string, int> freq;
-    int length = 0;
-    bool hasCentral = false;
+    int longestPalindrome(vector<string>& words) {
+        unordered_map<string, int> ht;
+        int len = 0;
+        bool mid = false;
 
-    for (const string &word : words) {
-      freq[word]++;
-    }
-
-    for (auto &[word, count] : freq) {
-      string rev = string(word.rbegin(), word.rend());
-
-      if (word == rev) {
-        int pairs = count / 2;
-        length += pairs * 4;
-        freq[word] -= pairs * 2;
-
-        if (freq[word] > 0 && !hasCentral) {
-          length += 2;
-          hasCentral = true;
+        for (string& word : words) {
+            ht[word]++;
         }
-      } else if (freq.find(rev) != freq.end()) {
-        int pairs = min(freq[word], freq[rev]);
-        length += pairs * 4;
-        freq[word] -= pairs;
-        freq[rev] -= pairs;
-      }
-    }
 
-    return length;
-  }
+        for (auto& [word, freq] : ht) {
+            string rev = string() + word[1] + word[0];
+            if (word == rev) {
+                len += (freq/2) * 4;
+                if (freq % 2 == 1) mid = true;
+            } else if (ht.find(rev) != ht.end()) {
+                int pairs = min(freq, ht[rev]);
+                len += pairs * 4;
+                ht[rev] = 0;
+            }
+            ht[word] = 0; 
+        }
+
+        if (mid) len += 2;
+        
+        return len;
+    }
 };
