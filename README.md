@@ -1,22 +1,23 @@
-<h1>Leetcode C++</h1>
-</div>
+# Leetcode C++
 
-This repo contains almost\* all my C++ solutions to the [LeetCode](https://leetcode.com/problemset/). It shows how I approach coding challenges and demonstrates my skills with C++. I’ve included solutions for a wide range of topics, like data structures, algorithms, and problem-solving techniques. The code is organized to make it easy to follow and review. I use this repo both to track my progress over time and to share examples of my work with others.
+This repository contains (almost)\* all of my C++ solutions to [LeetCode](https://leetcode.com/problemset/) problems. It showcases my approach to coding challenges and demonstrates my skills in C++, particularly in data structures, algorithms, and general problem-solving techniques.
 
-<br>
+The code is organized for readability and review. I use this repository both as a personal progress tracker and as a public portfolio of my work.
+
 <br>
 
 <div align="center">
     <a href="https://leetcode.com/s4nj1th">
-        <img src="https://leetcard.jacoblin.cool/s4nj1th?border=0&radius=0&ext=heatmap&font=Atkinson_Hyperlegible" style="box-shadow: 0 0 10px #000" alt="Leetcode Stats">
+        <img src="https://leetcard.jacoblin.cool/s4nj1th?ext=heatmap&font=Atkinson_Hyperlegible" alt="LeetCode Stats">
     </a>
 </div>
 
 <br>
+
+## License
+
+This project is in the public domain under [The Unlicense](./UNLICENSE). You are free to use, modify, and distribute the code without restriction.
+
 <br>
 
-<div align="right">
-* Some of the old codes aren't uploaded. <br>
-(coz i didnt bother to)
-</div>
-
+<sub><i>\* Some older solutions are not included — mostly because I didn’t bother uploading them.</i></sub>
