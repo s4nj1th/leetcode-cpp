@@ -20,4 +20,4 @@ This project is in the public domain under [The Unlicense](./UNLICENSE). You are
 
 <br>
 
-<sub><i>\* Some older solutions are not included — mostly because I didn’t bother uploading them.</i></sub>
+> _\* Some older solutions are not included — mostly because I didn’t bother uploading them._
